@@ -1,7 +1,13 @@
 /* ZIT Connect — Devis & Facturas Manager */
 
+// Cargar configuración desde config.js
+if (typeof window.DEVIS_CONFIG === 'undefined') {
+  console.error('⚠️ Error: config.js no encontrado. Copia config.example.js como config.js');
+  window.DEVIS_CONFIG = { password: '' };
+}
+
 const CONFIG = {
-  password: 'zitconnect2026', // Cambiar a tu contraseña segura
+  password: window.DEVIS_CONFIG.password,
   companyData: {
     name: 'ZIT Connect',
     ownerName: 'Jonathan ZAMBRANO',

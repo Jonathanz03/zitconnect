@@ -1,0 +1,8 @@
+# No comitar archivos de configuración con contraseñas
+config.js
+.env
+.env.local
+
+# Archivos locales
+*.local.js
+node_modules/
