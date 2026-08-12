@@ -1,0 +1,71 @@
+/* ZIT Connect — Animations */
+
+@keyframes nodepulse {
+  0% {
+    r: 6;
+    opacity: 0.7;
+  }
+  70% {
+    r: 17;
+    opacity: 0;
+  }
+  100% {
+    r: 17;
+    opacity: 0;
+  }
+}
+
+/* Node animations */
+.node-anchor .node-ring {
+  animation: nodepulse 3.4s ease-out infinite;
+}
+
+.node-anchor:nth-child(2) .node-ring {
+  animation-delay: 0.5s;
+}
+
+.node-anchor:nth-child(3) .node-ring {
+  animation-delay: 1s;
+}
+
+.node-anchor:nth-child(4) .node-ring {
+  animation-delay: 1.5s;
+}
+
+.node-anchor:nth-child(5) .node-ring {
+  animation-delay: 2s;
+}
+
+.node-anchor:nth-child(6) .node-ring {
+  animation-delay: 2.5s;
+}
+
+/* Scroll reveal animation */
+body.has-js section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--transition-slow) ease, transform var(--transition-slow) ease;
+}
+
+body.has-js section.in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto;
+  }
+
+  .pulse {
+    display: none;
+  }
+
+  body.has-js section {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

@@ -1,0 +1,66 @@
+/* ZIT Connect — Responsive Design */
+
+@media (max-width: 900px) {
+  section {
+    padding: 74px 0;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .pain-grid,
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 24px;
+  }
+
+  .modes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .res-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .readout .cell {
+    flex: 1 1 50%;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrap {
+    padding: 0 20px;
+  }
+
+  .nav-inner {
+    padding: 12px 20px;
+  }
+
+  .brand .logo {
+    height: 34px;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .steps,
+  .res-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .readout .cell {
+    flex: 1 1 100%;
+    border-right: 0;
+  }
+}

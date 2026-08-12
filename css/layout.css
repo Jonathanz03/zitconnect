@@ -1,0 +1,218 @@
+/* ZIT Connect — Layout & Sections */
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+section {
+  padding: var(--spacing-xl) 0;
+  position: relative;
+}
+
+/* Eyebrow / Label */
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--signal);
+  margin: 0 0 var(--spacing-md);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 22px;
+  height: 1px;
+  background: var(--signal-line);
+  display: inline-block;
+}
+
+/* Headings */
+h2.title {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(1.7rem, 3.6vw, 2.7rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  color: var(--head);
+  margin: 0 0 var(--spacing-md);
+  max-width: 20ch;
+}
+
+.lead {
+  color: var(--muted);
+  max-width: 58ch;
+  font-size: 1.05rem;
+  margin-top: 14px;
+}
+
+/* Navigation */
+header.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(238, 243, 247, 0.82);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 14px var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand .logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+.nav-links a {
+  color: var(--muted);
+  transition: color var(--transition-fast);
+}
+
+.nav-links a:hover {
+  color: var(--head);
+}
+
+.nav-cta {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  background: var(--signal);
+  color: #fff;
+  padding: 9px 16px;
+  border-radius: 7px;
+  transition: var(--transition-normal);
+  border: none;
+  cursor: pointer;
+}
+
+.nav-cta:hover {
+  background: #0c7a90;
+}
+
+/* Language Toggle */
+.lang {
+  display: flex;
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  overflow: hidden;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+}
+
+.lang button {
+  background: transparent;
+  border: 0;
+  color: var(--muted);
+  padding: 6px 12px;
+  cursor: pointer;
+  letter-spacing: 0.08em;
+  transition: var(--transition-fast);
+}
+
+.lang button.on {
+  background: var(--signal);
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+  padding: var(--spacing-xl) 0 100px;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 820px;
+  height: 520px;
+  max-width: 120vw;
+  background: radial-gradient(ellipse at center, rgba(15, 141, 166, 0.10), transparent 62%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero .wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(2.1rem, 5.6vw, 3.9rem);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  color: var(--head);
+  margin: 20px 0 24px;
+  max-width: 20ch;
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: var(--signal);
+}
+
+.hero .sub {
+  font-size: 1.14rem;
+  color: var(--muted);
+  max-width: 60ch;
+  margin: 0 0 50px;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer.site {
+  border-top: 1px solid var(--line);
+  padding: 60px 0;
+  background: var(--ink);
+}
+
+.foot-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+}
+
+.foot-brand .logo-foot {
+  height: 34px;
+  width: auto;
+  display: block;
+}
+
+.foot-meta {
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}

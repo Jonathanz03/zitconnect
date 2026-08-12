@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resetear Idioma</title>
+</head>
+<body>
+    <h1>Reseteando idioma...</h1>
+    <p>Espera un momento...</p>
+    
+    <script>
+        // Limpiar localStorage
+        localStorage.removeItem('zit-language');
+        console.log('✓ localStorage limpiado');
+        
+        // Redirigir a la página principal
+        setTimeout(function() {
+            window.location.href = 'index.html';
+        }, 1000);
+    </script>
+</body>
+</html>

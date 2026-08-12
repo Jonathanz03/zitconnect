@@ -1,0 +1,37 @@
+/* ZIT Connect — CSS Variables */
+
+:root {
+  /* Colors */
+  --ink: #EEF3F7;
+  --ink-2: #E3ECF2;
+  --panel: #FFFFFF;
+  --panel-hi: #F5F9FC;
+  --line: rgba(20, 58, 99, 0.12);
+  --line-2: rgba(20, 58, 99, 0.20);
+  --signal: #0F8DA6;
+  --signal-soft: rgba(15, 141, 166, 0.12);
+  --signal-line: rgba(15, 141, 166, 0.45);
+  --trace: #1B6E8C;
+  --text: #33485B;
+  --muted: #6C7F8E;
+  --head: #143A63;
+
+  /* Layout */
+  --maxw: 1120px;
+  --spacing-xs: 8px;
+  --spacing-sm: 14px;
+  --spacing-md: 28px;
+  --spacing-lg: 56px;
+  --spacing-xl: 140px;
+
+  /* Typography */
+  --display: 'Space Grotesk', system-ui, sans-serif;
+  --body: 'Inter', system-ui, sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  /* Transitions */
+  --transition-fast: 0.18s;
+  --transition-normal: 0.2s;
+  --transition-slow: 0.7s;
+  --timing-ease-out: ease-out;
+}
