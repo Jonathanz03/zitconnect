@@ -18,3 +18,7 @@
 .service-link,.field label,.desktop-nav a{font-size:.875rem}
 @media(max-width:720px){.hero-trust>div{padding:0 14px}.hero-trust strong{white-space:nowrap}.hero-trust>div>span{line-height:1.65}.service-top{gap:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+/* Keep FSPBX visible beside 3CX across desktop and mobile. */
+.technology-names .tech-fspbx{font-weight:700;letter-spacing:-.045em}
+@media(max-width:720px){.technology-names>span:last-child:nth-child(3n+1){grid-column:2}}
